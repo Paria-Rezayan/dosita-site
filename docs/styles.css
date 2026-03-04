@@ -14,9 +14,7 @@
 
 *{ box-sizing: border-box; }
 
-html{
-  scroll-behavior: smooth;
-}
+html{ scroll-behavior: smooth; }
 
 body{
   margin: 0;
@@ -26,15 +24,8 @@ body{
   line-height: 1.7;
 }
 
-img{
-  max-width: 100%;
-  display: block;
-}
-
-a{
-  color: inherit;
-  text-decoration: none;
-}
+img{ max-width: 100%; display:block; }
+a{ color: inherit; text-decoration: none; }
 
 .container{
   width: min(92%, var(--max));
@@ -55,8 +46,8 @@ a{
 }
 
 .nav{
-  display: flex;
-  align-items: center;
+  display:flex;
+  align-items:center;
   justify-content: space-between;
   gap: 16px;
   padding: 14px 0;
@@ -68,8 +59,10 @@ a{
   color: var(--text);
 }
 
+.brand-text{ display:inline-block; }
+
 .navlinks{
-  display: flex;
+  display:flex;
   gap: 16px;
   flex-wrap: wrap;
 }
@@ -111,7 +104,7 @@ a{
 }
 
 .kicker{
-  display: inline-block;
+  display:inline-block;
   font-weight: 800;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -145,17 +138,17 @@ a{
 }
 
 .btnrow{
-  display: flex;
-  justify-content: center;
+  display:flex;
+  justify-content:center;
   gap: 12px;
   flex-wrap: wrap;
   margin: 28px 0 18px;
 }
 
 .btn{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
   padding: 11px 16px;
   border-radius: 10px;
   border: 1px solid var(--line);
@@ -184,8 +177,8 @@ a{
 }
 
 .chiprow{
-  display: flex;
-  justify-content: center;
+  display:flex;
+  justify-content:center;
   gap: 10px;
   flex-wrap: wrap;
   margin-top: 10px;
@@ -199,6 +192,25 @@ a{
   color: #4b5563;
   font-weight: 600;
   font-size: 0.9rem;
+}
+
+/* SHU logo placements */
+.affiliation{
+  display:flex;
+  justify-content:center;
+  margin-top: 22px;
+}
+
+.shu-logo{
+  height: 46px;
+  width: auto;
+  object-fit: contain;
+  filter: none;
+}
+
+.contact-logo{
+  height: 44px;
+  margin-bottom: 10px;
 }
 
 .section{
@@ -246,16 +258,21 @@ p{
   color: var(--accent-2);
 }
 
+.sep{
+  color: rgba(17,24,39,0.35);
+  margin: 0 8px;
+}
+
 .grid{
   margin-top: 18px;
-  display: grid;
+  display:grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
 }
 
 .grid3{
   margin-top: 18px;
-  display: grid;
+  display:grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
 }
@@ -268,9 +285,7 @@ p{
   box-shadow: 0 4px 14px rgba(17,24,39,0.04);
 }
 
-.card p{
-  margin: 0;
-}
+.card p{ margin: 0; }
 
 .figure{
   margin: 20px 0 8px;
@@ -294,9 +309,7 @@ p{
   background: #fcfcfd;
 }
 
-.figure.wide{
-  margin-top: 16px;
-}
+.figure.wide{ margin-top: 16px; }
 
 .refs{
   margin-top: 20px;
@@ -313,13 +326,11 @@ p{
   color: var(--muted);
 }
 
-.refs li{
-  margin-bottom: 10px;
-}
+.refs li{ margin-bottom: 10px; }
 
 .callout{
-  display: flex;
-  align-items: center;
+  display:flex;
+  align-items:center;
   justify-content: space-between;
   gap: 14px;
   padding: 20px;
@@ -328,12 +339,64 @@ p{
   background: #f8fbff;
 }
 
-.callout p{
-  margin: 0;
+.callout p{ margin: 0; }
+
+/* Team */
+.team-grid{
+  margin-top: 18px;
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
 }
 
-.muted{
+.person{
+  background: #ffffff;
+  border: 1px solid rgba(17,24,39,0.08);
+  border-radius: var(--radius);
+  padding: 22px;
+  box-shadow: 0 4px 14px rgba(17,24,39,0.04);
+}
+
+.person .role{
+  margin: 0 0 8px;
+  color: #374151;
+  font-weight: 600;
+  font-size: 0.98rem;
+}
+
+.person .org{
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.person .meta{
+  margin: 0;
   color: var(--muted-2);
+  font-size: 0.98rem;
+}
+
+/* Contact */
+.contact-card{
+  display:grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 18px;
+  padding: 22px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(17,24,39,0.08);
+  background: #ffffff;
+  box-shadow: 0 4px 14px rgba(17,24,39,0.04);
+}
+
+.addr-title{
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.addr{
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.0rem;
 }
 
 .footer{
@@ -350,24 +413,10 @@ p{
 }
 
 @media (max-width: 980px){
-  .navlinks{
-    display: none;
-  }
-
-  .grid{
-    grid-template-columns: 1fr;
-  }
-
-  .grid3{
-    grid-template-columns: 1fr;
-  }
-
-  .callout{
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .intro{
-    text-align: left;
-  }
+  .navlinks{ display:none; }
+  .grid{ grid-template-columns: 1fr; }
+  .grid3{ grid-template-columns: 1fr; }
+  .team-grid{ grid-template-columns: 1fr; }
+  .callout{ flex-direction: column; align-items: stretch; }
+  .contact-card{ grid-template-columns: 1fr; }
 }
