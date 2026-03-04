@@ -7,8 +7,9 @@
   <title>DOSITA | PhD Research Project</title>
   <meta name="description" content="DOSITA: Data-Driven Online System Identification Tool for Autonomous Marine Vessels." />
 
-  <!-- Optional: add later if you upload one -->
-  <!-- <link rel="icon" type="image/png" href="assets/favicon.png" /> -->
+  <!-- Favicon (upload to: docs/assets/favicon.png) -->
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -17,7 +18,9 @@
   <!-- Top nav -->
   <header class="topbar">
     <div class="container nav">
-      <a class="brand" href="#top">DOSITA</a>
+      <a class="brand" href="#top" aria-label="DOSITA home">
+        <span class="brand-text">DOSITA</span>
+      </a>
 
       <nav class="navlinks" aria-label="Primary">
         <a href="#overview">Overview</a>
@@ -26,6 +29,7 @@
         <a href="#pipeline">Pipeline</a>
         <a href="#poc">Proof of Concept</a>
         <a href="#outputs">Outputs</a>
+        <a href="#team">Team</a>
         <a href="#contact">Contact</a>
       </nav>
 
@@ -34,7 +38,7 @@
   </header>
 
   <main id="top">
-    <!-- Hero (Nerfies-style: centered title + buttons) -->
+    <!-- Hero -->
     <section class="hero">
       <div class="container hero-inner">
         <p class="kicker">PhD Research Project • Started February 2026</p>
@@ -61,6 +65,10 @@
           <span class="chip">PINNs</span>
           <span class="chip">AI Optimisation</span>
           <span class="chip">Benchmarking</span>
+        </div>
+
+        <div class="affiliation">
+          <img class="shu-logo" src="assets/shu_logo.jpg" alt="Sheffield Hallam University logo" />
         </div>
       </div>
     </section>
@@ -251,29 +259,110 @@
       </div>
     </section>
 
+    <!-- Team -->
+    <section id="team" class="section">
+      <div class="container">
+        <h2>Team</h2>
+
+        <div class="team-grid">
+          <article class="person">
+            <h3>Paria Rezayan</h3>
+            <p class="role">PhD Researcher – Marine Robotics</p>
+            <p class="org">Sheffield Hallam University</p>
+            <p class="meta">
+              <a class="link" href="mailto:P.Rezayan@shu.ac.uk">P.Rezayan@shu.ac.uk</a>
+              <span class="sep">•</span>
+              <a class="link" href="https://www.linkedin.com/in/Paria-Rezayan" target="_blank" rel="noopener">LinkedIn</a>
+            </p>
+          </article>
+
+          <article class="person">
+            <h3>Dr. Yogang Singh</h3>
+            <p class="role">Assistant Professor – School of Engineering and Built Environment</p>
+            <p class="org">Sheffield Hallam University</p>
+            <p class="meta">
+              <a class="link" href="mailto:Y.Singh@shu.ac.uk">Y.Singh@shu.ac.uk</a>
+              <span class="sep">•</span>
+              <a class="link" href="https://www.linkedin.com/in/yogang-singh" target="_blank" rel="noopener">LinkedIn</a>
+            </p>
+          </article>
+
+          <article class="person">
+            <h3>Dr. Konstantinos Domdouzis</h3>
+            <p class="role">Assistant Professor – School of Computing and Digital Technologies</p>
+            <p class="org">Sheffield Hallam University</p>
+            <p class="meta">
+              <a class="link" href="mailto:k.domdouzis@shu.ac.uk">k.domdouzis@shu.ac.uk</a>
+              <span class="sep">•</span>
+              <a class="link" href="https://www.linkedin.com/in/konstantinos-d-a1b3b431" target="_blank" rel="noopener">LinkedIn</a>
+            </p>
+          </article>
+
+          <article class="person">
+            <h3>Dr. Michele Martelli</h3>
+            <p class="role">Associate Professor – Dep. of Naval, Electrical, Electronic &amp; Telecom. Eng.</p>
+            <p class="org">University of Genoa</p>
+            <p class="meta">
+              <a class="link" href="mailto:michele.martelli@unige.it">michele.martelli@unige.it</a>
+              <span class="sep">•</span>
+              <a class="link" href="https://www.linkedin.com/in/martellimichele" target="_blank" rel="noopener">LinkedIn</a>
+            </p>
+          </article>
+
+          <article class="person">
+            <h3>Dr. Fuat Kara</h3>
+            <p class="role">Associate Professor – School of Engineering and Built Environment</p>
+            <p class="org">Sheffield Hallam University</p>
+            <p class="meta">
+              <a class="link" href="mailto:Fuat.Kara@shu.ac.uk">Fuat.Kara@shu.ac.uk</a>
+              <span class="sep">•</span>
+              <a class="link" href="https://www.linkedin.com/in/fuat-kara-55755624" target="_blank" rel="noopener">LinkedIn</a>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact -->
-    <section id="contact" class="section">
+    <section id="contact" class="section alt">
       <div class="container narrow">
         <h2>Contact</h2>
-        <p><strong>Paria Rezayan</strong></p>
-        <p>PhD Researcher – Marine Robotics</p>
-        <p>Sheffield Hallam University</p>
-        <p>Email: <a class="link" href="mailto:P.Rezayan@shu.ac.uk">P.Rezayan@shu.ac.uk</a></p>
-        <p>
-          <a class="link" href="https://github.com/Paria-Rezayan" target="_blank" rel="noopener">
-            GitHub Profile
-          </a>
-        </p>
+
+        <div class="contact-card">
+          <div class="contact-left">
+            <img class="shu-logo contact-logo" src="assets/shu_logo.jpg" alt="Sheffield Hallam University logo" />
+            <p><strong>Paria Rezayan</strong></p>
+            <p>PhD Researcher – Marine Robotics</p>
+            <p>Sheffield Hallam University</p>
+            <p>Email: <a class="link" href="mailto:P.Rezayan@shu.ac.uk">P.Rezayan@shu.ac.uk</a></p>
+            <p>
+              <a class="link" href="https://github.com/Paria-Rezayan" target="_blank" rel="noopener">GitHub</a>
+              <span class="sep">•</span>
+              <a class="link" href="https://www.linkedin.com/in/Paria-Rezayan" target="_blank" rel="noopener">LinkedIn</a>
+            </p>
+          </div>
+
+          <div class="contact-right">
+            <p class="addr-title"><strong>Address</strong></p>
+            <p class="addr">
+              Department of Engineering and Mathematics<br />
+              College of Business, Technology &amp; Engineering<br /><br />
+              Sheaf 4310 | Sheaf Building | City Campus<br />
+              Sheffield Hallam University | Sheffield | S1 1WB | United Kingdom
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer credit (Step 9) -->
+  <!-- Footer credit -->
   <footer class="footer">
     <div class="container narrow">
       <p>
         © 2026 DOSITA. Website layout inspired by modern research project pages (Nerfies-style).
-        Reference template source: <a class="link" href="https://github.com/nerfies/nerfies.github.io" target="_blank" rel="noopener">nerfies.github.io</a>.
+        Reference template source:
+        <a class="link" href="https://github.com/nerfies/nerfies.github.io" target="_blank" rel="noopener">nerfies.github.io</a>.
       </p>
     </div>
   </footer>
