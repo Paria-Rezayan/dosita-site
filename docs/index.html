@@ -1,1 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOSITA | PhD Research Project</title>
+  <meta name="description" content="DOSITA: Data-Driven Online System Identification Tool for Autonomous Marine Vessels." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">DOSITA</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#questions">Questions</a>
+        <a href="#pipeline">Pipeline</a>
+        <a href="#precursor">Precursor</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">PhD Research Project • Started February 2026</p>
+        <h1>Data-Driven Online System Identification Tool for Autonomous Marine Vessels</h1>
+        <p class="lead">
+          DOSITA investigates AI-enabled, physics-informed, and simulation-driven methods
+          for online identification of ship manoeuvring dynamics in autonomous marine vessels.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#about">Explore the Project</a>
+          <a class="btn btn-secondary" href="https://github.com/Paria-Rezayan/dosite_site" target="_blank" rel="noopener">Website Repository</a>
+        </div>
+        <div class="chips">
+          <span>MARUS</span>
+          <span>PINNs</span>
+          <span>System Identification</span>
+          <span>Marine Robotics</span>
+          <span>Benchmarking</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h3>Project Focus</h3>
+        <ul>
+          <li>Real-time estimation of coupled hydrodynamic derivatives</li>
+          <li>Physics-informed learning for manoeuvring models</li>
+          <li>Benchmarking with standard turning circle and zig-zag trials</li>
+          <li>Digital-twin-style simulation workflow using MARUS</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container narrow">
+      <h2>About DOSITA</h2>
+      <p>
+        DOSITA is a PhD research project focused on the development of an open-source,
+        AI-enabled online system identification framework for autonomous marine vessels,
+        particularly Unmanned Surface Vessels (USVs).
+      </p>
+      <p>
+        The project centres on the real-time estimation of coupled hydrodynamic derivatives
+        using data-driven methodologies embedded within the high-fidelity simulation environment
+        of MARUS (Marine Robotics Unity Simulator).
+      </p>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container narrow">
+      <h2>Why It Matters</h2>
+      <p>
+        Maritime decarbonisation and sustainable autonomy require models that are both accurate
+        and adaptable. Existing manoeuvring identification workflows often depend on labour-intensive,
+        costly, or offline approaches. DOSITA explores whether simulation-driven, physics-informed,
+        and AI-enhanced identification can deliver more efficient, robust, and interpretable models.
+      </p>
+    </div>
+  </section>
+
+  <section id="questions" class="section">
+    <div class="container">
+      <h2>Research Questions</h2>
+      <div class="grid-two">
+        <div class="card">
+          <h3>RQ1</h3>
+          <p>How can a data-driven online identification framework enable real-time estimation of coupled hydrodynamic derivatives in nonlinear ship manoeuvring models?</p>
+        </div>
+        <div class="card">
+          <h3>RQ2</h3>
+          <p>How can AI-enabled machine learning optimisation improve the accuracy, robustness, and physical consistency of online nonlinear manoeuvring model identification?</p>
+        </div>
+        <div class="card">
+          <h3>RQ3</h3>
+          <p>How can integration with a high-fidelity simulation and digital-twin framework such as MARUS accelerate the development, validation, and deployment of intelligent maritime systems?</p>
+        </div>
+        <div class="card">
+          <h3>RQ4</h3>
+          <p>What is the trade-off between real-time simulation execution and the reliability of hydrodynamic derivative estimation during validation and benchmarking?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pipeline" class="section alt">
+    <div class="container">
+      <h2>Planned Pipeline</h2>
+      <p class="section-intro">
+        The DOSITA workflow links MARUS-based manoeuvre generation, preprocessing,
+        identification, optimisation, and benchmarking into a reproducible research pipeline.
+      </p>
+      <div class="image-wrap">
+        <img src="assets/planned_pipeline.png" alt="DOSITA planned pipeline" />
+      </div>
+    </div>
+  </section>
+
+  <section id="precursor" class="section">
+    <div class="container narrow">
+      <h2>Proof of Concept / MSc Precursor</h2>
+      <p>
+        DOSITA builds on an MSc precursor study carried out as part of the dissertation
+        <strong>“Data-Driven Estimation of Ship Manoeuvring Hydrodynamic Derivatives using a Hybrid MARUS–PINN Framework with LLM-Guided Symbolic Discovery.”</strong>
+      </p>
+      <p>
+        That proof of concept explored how MARUS-generated manoeuvring data, Physics-Informed
+        Neural Networks (PINNs), and LLM-guided symbolic discovery could be combined to estimate
+        hydrodynamic derivatives with improved robustness, interpretability, and data efficiency.
+      </p>
+      <p>
+        DOSITA extends that foundation toward online identification, real-time model updating,
+        benchmarked validation, and a more structured open research framework.
+      </p>
+    </div>
+  </section>
+
+  <section id="publications" class="section alt">
+    <div class="container">
+      <h2>Publications & Outputs</h2>
+      <div class="grid-three">
+        <div class="card">
+          <h3>MSc Dissertation</h3>
+          <p>Foundational precursor work informing the DOSITA research direction.</p>
+          <a class="text-link" href="files/Rezayan_MSc_Dissertation_2025.pdf" target="_blank" rel="noopener">Open PDF</a>
+        </div>
+        <div class="card">
+          <h3>AUV 2026</h3>
+          <p>Abstract submission related to the project’s emerging research direction.</p>
+          <a class="text-link" href="files/AUV_2026_Abstract_Submission.pdf" target="_blank" rel="noopener">Open PDF</a>
+        </div>
+        <div class="card">
+          <h3>ISCSS 2026</h3>
+          <p>Abstract submission linked to the early framing of the DOSITA project.</p>
+          <a class="text-link" href="files/ISCSS_2026_Abstract_Submission.pdf" target="_blank" rel="noopener">Open PDF</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <div class="container narrow">
+      <h2>Contact</h2>
+      <p><strong>Paria Rezayan</strong></p>
+      <p>PhD Researcher in Marine Robotics and Autonomous Systems</p>
+      <p>Sheffield Hallam University</p>
+      <p>Email: P.Rezayan@shu.ac.uk</p>
+      <p><a class="text-link" href="https://github.com/YOURUSERNAME" target="_blank" rel="noopener">GitHub Profile</a></p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 DOSITA — Research website for an evolving PhD project.</p>
+    </div>
+  </footer>
+</body>
+</html>
