@@ -7,21 +7,53 @@
   <title>DOSITA | PhD Research Project</title>
   <meta name="description" content="DOSITA: Data-Driven Online System Identification Tool for Autonomous Marine Vessels." />
 
-  <!-- Favicon (upload to: docs/assets/favicon.png) -->
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/dosita-favicon.png" />
   <link rel="apple-touch-icon" href="assets/dosita-favicon.png" />
+
+  <!-- Optional: clean academic font (safe fallback to system fonts if blocked) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <a class="skiplink" href="#top">Skip to content</a>
+
   <!-- Top nav -->
-  <header class="topbar">
+  <header class="topbar" role="banner">
     <div class="container nav">
       <a class="brand" href="#top" aria-label="DOSITA home">
+        <span class="brand-mark" aria-hidden="true"></span>
         <span class="brand-text">DOSITA</span>
       </a>
 
+      <!-- Mobile menu (no JS) -->
+      <details class="menu" aria-label="Site menu">
+        <summary class="menu-btn" aria-label="Open menu">
+          <span class="menu-icon" aria-hidden="true"></span>
+          <span class="menu-label">Menu</span>
+        </summary>
+
+        <nav class="menu-panel" aria-label="Primary">
+          <a href="#overview">Overview</a>
+          <a href="#why">Why</a>
+          <a href="#questions">Questions</a>
+          <a href="#pipeline">Pipeline</a>
+          <a href="#poc">Proof of Concept</a>
+          <a href="#outputs">Outputs</a>
+          <a href="#team">Team</a>
+          <a href="#contact">Contact</a>
+
+          <div class="menu-cta">
+            <a class="navbtn" href="#outputs">PDFs</a>
+          </div>
+        </nav>
+      </details>
+
+      <!-- Desktop nav -->
       <nav class="navlinks" aria-label="Primary">
         <a href="#overview">Overview</a>
         <a href="#why">Why</a>
@@ -33,7 +65,7 @@
         <a href="#contact">Contact</a>
       </nav>
 
-      <a class="navbtn" href="#outputs">PDFs</a>
+      <a class="navbtn navbtn-desktop" href="#outputs">PDFs</a>
     </div>
   </header>
 
@@ -263,10 +295,9 @@
     <section id="team" class="section">
       <div class="container">
         <h2>Research Team</h2>
-    
+
         <div class="team-grid">
-    
-          <!-- Paria -->
+
           <article class="team-card">
             <img src="assets/Paria_Rezayan.png" alt="Paria Rezayan" class="team-photo">
             <h3>Paria Rezayan</h3>
@@ -275,11 +306,10 @@
             <div class="team-links">
               <a href="mailto:P.Rezayan@shu.ac.uk">Email</a>
               <span>•</span>
-              <a href="https://www.linkedin.com/in/Paria-Rezayan" target="_blank">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/Paria-Rezayan" target="_blank" rel="noopener">LinkedIn</a>
             </div>
           </article>
-    
-          <!-- Yogang -->
+
           <article class="team-card">
             <img src="assets/Yogang_Singh.png" alt="Dr Yogang Singh" class="team-photo">
             <h3>Dr. Yogang Singh</h3>
@@ -288,11 +318,10 @@
             <div class="team-links">
               <a href="mailto:Y.Singh@shu.ac.uk">Email</a>
               <span>•</span>
-              <a href="https://www.linkedin.com/in/yogang-singh" target="_blank">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/yogang-singh" target="_blank" rel="noopener">LinkedIn</a>
             </div>
           </article>
-    
-          <!-- Domdouzis -->
+
           <article class="team-card">
             <img src="assets/Konstantinos_Domdouzis.png" alt="Dr Konstantinos Domdouzis" class="team-photo">
             <h3>Dr. Konstantinos Domdouzis</h3>
@@ -301,11 +330,10 @@
             <div class="team-links">
               <a href="mailto:k.domdouzis@shu.ac.uk">Email</a>
               <span>•</span>
-              <a href="https://www.linkedin.com/in/konstantinos-d-a1b3b431" target="_blank">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/konstantinos-d-a1b3b431" target="_blank" rel="noopener">LinkedIn</a>
             </div>
           </article>
-    
-          <!-- Martelli -->
+
           <article class="team-card">
             <img src="assets/Michele_Martelli.png" alt="Dr Michele Martelli" class="team-photo">
             <h3>Dr. Michele Martelli</h3>
@@ -314,11 +342,10 @@
             <div class="team-links">
               <a href="mailto:michele.martelli@unige.it">Email</a>
               <span>•</span>
-              <a href="https://www.linkedin.com/in/martellimichele" target="_blank">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/martellimichele" target="_blank" rel="noopener">LinkedIn</a>
             </div>
           </article>
-    
-          <!-- Kara -->
+
           <article class="team-card">
             <img src="assets/Fuat_Kara.png" alt="Dr Fuat Kara" class="team-photo">
             <h3>Dr. Fuat Kara</h3>
@@ -327,10 +354,10 @@
             <div class="team-links">
               <a href="mailto:Fuat.Kara@shu.ac.uk">Email</a>
               <span>•</span>
-              <a href="https://www.linkedin.com/in/fuat-kara-55755624" target="_blank">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/fuat-kara-55755624" target="_blank" rel="noopener">LinkedIn</a>
             </div>
           </article>
-    
+
         </div>
       </div>
     </section>
