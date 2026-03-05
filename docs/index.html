@@ -7,9 +7,26 @@
   <title>DOSITA | PhD Research Project</title>
   <meta name="description" content="DOSITA: Data-Driven Online System Identification Tool for Autonomous Marine Vessels." />
 
+  <!-- Canonical + SEO / Social -->
+  <link rel="canonical" href="https://paria-rezayan.github.io/dosita-site/" />
+  <meta name="theme-color" content="#1f4b99" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="DOSITA | Data-Driven Online System Identification for Autonomous Marine Vessels" />
+  <meta property="og:description" content="Open-source, AI-enabled online system identification for real-time coupled hydrodynamic derivative estimation, integrated with MARUS." />
+  <meta property="og:url" content="https://paria-rezayan.github.io/dosita-site/" />
+  <meta property="og:image" content="https://paria-rezayan.github.io/dosita-site/assets/scene2.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DOSITA | PhD Research Project" />
+  <meta name="twitter:description" content="AI-enabled online system identification + MARUS digital-twin benchmarking for sustainable autonomous marine vessels." />
+  <meta name="twitter:image" content="https://paria-rezayan.github.io/dosita-site/assets/scene2.png" />
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/dosita-favicon.png" />
   <link rel="apple-touch-icon" href="assets/dosita-favicon.png" />
 
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -27,6 +44,7 @@
         <span class="brand-text">DOSITA</span>
       </a>
 
+      <!-- Mobile menu -->
       <details class="menu" aria-label="Site menu">
         <summary class="menu-btn" aria-label="Open menu">
           <span class="menu-icon" aria-hidden="true"></span>
@@ -38,20 +56,27 @@
           <a href="#why">Why</a>
           <a href="#questions">Questions</a>
           <a href="#pipeline">Pipeline</a>
+          <a href="#benchmarks">Benchmarks</a>
+          <a href="#results">Results</a>
           <a href="#poc">Proof of Concept</a>
           <a href="#publications">Publications</a>
+          <a href="#cite">Cite</a>
           <a href="#team">Team</a>
           <a href="#contact">Contact</a>
         </nav>
       </details>
 
+      <!-- Desktop nav -->
       <nav class="navlinks" aria-label="Primary">
         <a href="#overview">Overview</a>
         <a href="#why">Why</a>
         <a href="#questions">Questions</a>
         <a href="#pipeline">Pipeline</a>
+        <a href="#benchmarks">Benchmarks</a>
+        <a href="#results">Results</a>
         <a href="#poc">Proof of Concept</a>
         <a href="#publications">Publications</a>
+        <a href="#cite">Cite</a>
         <a href="#team">Team</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -61,6 +86,7 @@
   </header>
 
   <main id="main">
+    <!-- Hero -->
     <section class="hero" id="top">
       <div class="container hero-grid">
         <div class="hero-copy">
@@ -79,14 +105,20 @@
             AI-Enabled Modelling and Control of Sustainable, Autonomous Marine Vessels for Maritime Decarbonisation
           </p>
 
-          <p class="hero-meta">
-            Started February 2026
-          </p>
+          <p class="hero-meta">Started February 2026</p>
 
           <div class="btnrow">
             <a class="btn primary" href="#overview">Project Overview</a>
             <a class="btn" href="#pipeline">View Pipeline</a>
             <a class="btn" href="#publications">Publications</a>
+          </div>
+
+          <!-- Resources strip (SOTA-style) -->
+          <div class="resources" aria-label="Project resources">
+            <a class="resource-pill" href="https://github.com/Paria-Rezayan" target="_blank" rel="noopener">GitHub</a>
+            <a class="resource-pill" href="#pipeline">Docs</a>
+            <span class="resource-pill resource-muted" aria-label="Dataset coming soon">Dataset (coming soon)</span>
+            <a class="resource-pill" href="#contact">Contact</a>
           </div>
 
           <div class="hero-logos" aria-label="Project affiliation">
@@ -104,24 +136,24 @@
               loading="eager"
             />
             <figcaption>
-              MARUS simulation environment preview for manoeuvring scenario design, virtual sea trials, and data-driven model deployment.
+              MARUS simulation preview used for manoeuvring scenario design, virtual sea trials, and data-driven model deployment.
             </figcaption>
           </figure>
 
           <div class="hero-sidecard">
-          <h3>Research Focus</h3>
-          <ul class="focus-list">
-            <li><strong>Adaptive online system identification</strong> for real-time manoeuvring model updates.</li>
-            <li><strong>Coupled hydrodynamic derivative estimation</strong> robust to noise and parameter correlation.</li>
-            <li><strong>Physically consistent AI-enabled learning</strong> that balances accuracy and interpretability. </li>
-            <li><strong>Digital-twin benchmarking</strong> in MARUS using standard manoeuvres/metrics to validate generalisation.</li>
-          </ul>
-        </div>
+            <h3>Research Focus</h3>
+            <ul class="focus-list">
+              <li><strong>Adaptive online system identification</strong> for real-time manoeuvring model updates.</li>
+              <li><strong>Coupled hydrodynamic derivative estimation</strong> robust to noise and parameter correlation.</li>
+              <li><strong>Physically consistent AI-enabled learning</strong> balancing accuracy and interpretability.</li>
+              <li><strong>Digital-twin benchmarking</strong> in MARUS using standard manoeuvres/metrics to validate generalisation.</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-    
+    <!-- Overview -->
     <section id="overview" class="section">
       <div class="container narrow">
         <p class="eyebrow">Overview</p>
@@ -142,6 +174,7 @@
       </div>
     </section>
 
+    <!-- Why -->
     <section id="why" class="section alt">
       <div class="container narrow">
         <p class="eyebrow">Motivation</p>
@@ -194,6 +227,7 @@
       </div>
     </section>
 
+    <!-- Research Questions -->
     <section id="questions" class="section">
       <div class="container">
         <p class="eyebrow">Research Direction</p>
@@ -235,6 +269,7 @@
       </div>
     </section>
 
+    <!-- Pipeline -->
     <section id="pipeline" class="section alt">
       <div class="container">
         <p class="eyebrow">Methodology</p>
@@ -258,6 +293,116 @@
       </div>
     </section>
 
+    <!-- Benchmarks & Validation (SOTA section) -->
+    <section id="benchmarks" class="section">
+      <div class="container">
+        <p class="eyebrow">Benchmarking</p>
+        <h2>Benchmarks &amp; Validation</h2>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <h3>Standards-aligned manoeuvres</h3>
+            <p>
+              Turning Circle (±35° rudder-equivalent) and Zig-Zag (10/10 and 20/20) under steady approach conditions
+              (SpeedHold + steady window) to produce system-identification-ready trajectories.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Core reported metrics</h3>
+            <p>
+              Turning Circle: Advance (Ad/L), Transfer (Tr/L), Tactical Diameter (Dt/L), steady diameter estimate, t90/t180, and max yaw rate.
+              Zig-Zag: initial turning distance (to 10°)/L, 1st/2nd overshoot (deg), peak times, max yaw rate, and cross-track error (XTE/L).
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Validation checks</h3>
+            <p>
+              IMO MSC.137-style criteria checks (pass/fail where applicable), trajectory deviation diagnostics, and consistency checks
+              between simulated predictions and manoeuvring data.
+            </p>
+          </article>
+        </div>
+
+        <div class="bench-table-wrap">
+          <div class="bench-table-head">
+            <h3 class="bench-title">Early baseline (illustrative)</h3>
+            <p class="bench-sub">Initial MARUS calibration and automated extraction outputs used as a reproducible benchmark baseline.</p>
+          </div>
+
+          <div class="bench-grid">
+            <div class="bench-card">
+              <h4>Turning Circle</h4>
+              <ul class="bench-list">
+                <li><strong>Advance (Ad/L):</strong> ~2.30–2.37</li>
+                <li><strong>Transfer (Tr/L):</strong> ~1.27–1.39</li>
+                <li><strong>Tactical Diameter (Dt/L):</strong> ~3.44–3.61</li>
+                <li><strong>Max yaw rate:</strong> ~6.2–6.4 deg/s</li>
+              </ul>
+            </div>
+
+            <div class="bench-card">
+              <h4>Zig-Zag (10/10 and 20/20)</h4>
+              <ul class="bench-list">
+                <li><strong>Initial turning distance to 10°/L:</strong> ~0.49–0.86</li>
+                <li><strong>1st overshoot:</strong> ~0.26–0.45 deg</li>
+                <li><strong>2nd overshoot:</strong> ~0.29–0.55 deg</li>
+                <li><strong>Max yaw rate:</strong> ~4.0–5.8 deg/s</li>
+              </ul>
+            </div>
+
+            <div class="bench-card">
+              <h4>Reporting + conventions</h4>
+              <ul class="bench-list">
+                <li><strong>3-DOF logging:</strong> x, y, ψ, u, v, r, δ̂cmd/δ̂exec proxies</li>
+                <li><strong>Coordinate/heading alignment:</strong> simulator ↔ nautical conversion applied for metrics</li>
+                <li><strong>Speed targeting:</strong> Vtarget derived from calibrated V85</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results / Milestones -->
+    <section id="results" class="section alt">
+      <div class="container">
+        <p class="eyebrow">Progress</p>
+        <h2>Results &amp; Current Milestones</h2>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <h3>Current milestones</h3>
+            <ul class="bullet">
+              <li>Standards-aligned TC/ZZ automation and dataset logging.</li>
+              <li>Automated metric extraction pipeline for benchmark reporting.</li>
+              <li>Baseline manoeuvre benchmarks for port/starboard runs.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Next milestones</h3>
+            <ul class="bullet">
+              <li>Online identification module integration (real-time derivatives).</li>
+              <li>Benchmark against literature hulls / published manoeuvre metrics.</li>
+              <li>Validation across manoeuvre families + robustness tests (noise, bias).</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Planned outputs</h3>
+            <ul class="bullet">
+              <li>Parametric state-space manoeuvring models (coupled derivatives).</li>
+              <li>Reproducible validation reports (metrics + criteria checks).</li>
+              <li>Open-source dataset + scripts for benchmarking.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proof of concept -->
     <section id="poc" class="section">
       <div class="container narrow">
         <p class="eyebrow">Foundations</p>
@@ -281,6 +426,7 @@
       </div>
     </section>
 
+    <!-- Publications -->
     <section id="publications" class="section">
       <div class="container section-grid section-grid-publications">
         <div>
@@ -330,8 +476,34 @@
       </div>
     </section>
 
-    <!-- TEAM (hierarchical) -->
-    <section id="team" class="section alt">
+    <!-- Cite -->
+    <section id="cite" class="section alt">
+      <div class="container narrow">
+        <p class="eyebrow">Citation</p>
+        <h2>Cite DOSITA</h2>
+        <p>
+          If you reference DOSITA (software, datasets, or methodology) in academic work, please cite using the BibTeX below.
+          This entry will be updated as peer-reviewed publications become available.
+        </p>
+
+        <div class="bibtex">
+          <div class="bibtex-head">
+            <h3>BibTeX</h3>
+            <p class="bibtex-sub">Copy and paste into your reference manager.</p>
+          </div>
+          <pre class="bibtex-code"><code>@misc{dosita2026,
+  title        = {DOSITA: Data-Driven Online System Identification Tool for Autonomous Marine Vessels},
+  author       = {Rezayan, Paria},
+  year         = {2026},
+  howpublished = {\url{https://paria-rezayan.github.io/dosita-site/}},
+  note         = {PhD research project, work in progress}
+}</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team" class="section">
       <div class="container">
         <p class="eyebrow">People</p>
         <h2>Research Team</h2>
@@ -417,10 +589,9 @@
       </div>
     </section>
 
-    <!-- Footer now contains contact (ONE unified block) -->
+    <!-- Footer (unified contact) -->
     <footer id="contact" class="footer footer-with-contact">
       <div class="container footer-contact-wrap">
-
         <div class="footer-contact">
           <div class="footer-contact-head">
             <h2 class="footer-contact-title">Get in Touch</h2>
@@ -450,15 +621,11 @@
             <div class="footer-contact-right">
               <p class="addr-title"><strong>Address</strong></p>
               <p class="addr">
-                Department of Engineering and Mathematics<br>
-                College of Business, Technology &amp; Engineering<br>
-                Sheaf Building, City Campus<br>
-                Sheffield Hallam University<br>
-                Sheffield S1 1WB, United Kingdom
+                Department of Engineering and Mathematics,<br />
+                College of Business, Technology &amp; Engineering, Sheaf Building | City Campus<br />
+                Sheffield Hallam University | Sheffield | S1 1WB | United Kingdom
               </p>
-              <a href="https://www.google.com/maps?q=Sheaf+Building+Sheffield+Hallam+University" target="_blank">
-                View on map
-              </a>
+              <a class="footer-link" href="https://www.google.com/maps?q=Sheaf+Building+Sheffield+Hallam+University" target="_blank" rel="noopener">View on map</a>
             </div>
           </div>
         </div>
@@ -469,7 +636,8 @@
             <a href="#overview">Overview</a>
             <a href="#questions">Research Questions</a>
             <a href="#pipeline">Pipeline</a>
-            <a href="#publications">Publications</a>
+            <a href="#benchmarks">Benchmarks</a>
+            <a href="#cite">Cite</a>
           </div>
 
           <div class="footer-col">
@@ -492,7 +660,6 @@
           <p>© 2026 DOSITA | Sheffield Hallam University</p>
           <p class="footer-meta">Project website</p>
         </div>
-
       </div>
     </footer>
   </main>
