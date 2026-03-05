@@ -7,11 +7,9 @@
   <title>DOSITA | PhD Research Project</title>
   <meta name="description" content="DOSITA: Data-Driven Online System Identification Tool for Autonomous Marine Vessels." />
 
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/dosita-favicon.png" />
   <link rel="apple-touch-icon" href="assets/dosita-favicon.png" />
 
-  <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -20,17 +18,15 @@
 </head>
 
 <body>
-  <a class="skiplink" href="#top">Skip to content</a>
+  <a class="skiplink" href="#main">Skip to content</a>
 
-  <!-- Top nav -->
   <header class="topbar" role="banner">
     <div class="container nav">
       <a class="brand" href="#top" aria-label="DOSITA home">
-        <span class="brand-mark" aria-hidden="true"></span>
+        <img src="assets/dosita-favicon.png" alt="DOSITA logo" class="brand-logo" />
         <span class="brand-text">DOSITA</span>
       </a>
 
-      <!-- Mobile menu (no JS) -->
       <details class="menu" aria-label="Site menu">
         <summary class="menu-btn" aria-label="Open menu">
           <span class="menu-icon" aria-hidden="true"></span>
@@ -42,43 +38,37 @@
           <a href="#why">Why</a>
           <a href="#questions">Questions</a>
           <a href="#pipeline">Pipeline</a>
+          <a href="#poc">Proof of Concept</a>
+          <a href="#outputs">Outputs</a>
           <a href="#publications">Publications</a>
-          <a href="#outputs">PDFs</a>
           <a href="#team">Team</a>
           <a href="#contact">Contact</a>
-
-          <div class="menu-cta">
-            <a class="navbtn" href="#outputs">PDFs</a>
-          </div>
         </nav>
       </details>
 
-      <!-- Desktop nav -->
       <nav class="navlinks" aria-label="Primary">
         <a href="#overview">Overview</a>
         <a href="#why">Why</a>
         <a href="#questions">Questions</a>
         <a href="#pipeline">Pipeline</a>
+        <a href="#poc">Proof of Concept</a>
+        <a href="#outputs">Outputs</a>
         <a href="#publications">Publications</a>
-        <a href="#outputs">PDFs</a>
         <a href="#team">Team</a>
         <a href="#contact">Contact</a>
       </nav>
 
-      <a class="navbtn navbtn-desktop" href="#outputs">PDFs</a>
+      <a class="navbtn navbtn-desktop" href="#outputs">Public PDFs</a>
     </div>
   </header>
 
-  <main id="top">
-    <!-- Hero -->
-    <section class="hero">
+  <main id="main">
+    <section class="hero" id="top">
       <div class="container hero-grid">
         <div class="hero-copy">
           <div class="hero-topline">
-            <p class="kicker">PhD Research Project • Started February 2026</p>
-            <span class="status-badge" aria-label="Project status badge">
-              Project Status: <strong>Work in Progress</strong>
-            </span>
+            <span class="kicker">PhD Research Project</span>
+            <span class="status-badge">Project Status: Work in Progress</span>
           </div>
 
           <h1 class="title">DOSITA</h1>
@@ -88,86 +78,107 @@
           </p>
 
           <p class="tagline">
-            AI-enabled modelling and control for sustainable autonomous marine vessels,
-            supporting maritime decarbonisation through robust online identification.
+            AI-Enabled Modelling and Control of Sustainable, Autonomous Marine Vessels for Maritime Decarbonisation
+          </p>
+
+          <p class="hero-meta">
+            Started February 2026
           </p>
 
           <div class="btnrow">
             <a class="btn primary" href="#overview">Project Overview</a>
             <a class="btn" href="#pipeline">View Pipeline</a>
-            <a class="btn" href="#publications">Publications</a>
+            <a class="btn" href="#outputs">Public PDFs</a>
           </div>
 
-          <div class="affiliation" aria-label="Affiliation logos">
-            <div class="logos">
-              <!-- DOSITA logo (uses your favicon as a mark) -->
-              <img class="logo dosita-logo" src="assets/dosita-favicon.png" alt="DOSITA logo" />
-              <span class="logo-sep" aria-hidden="true"></span>
-              <img class="logo shu-logo" src="assets/shu-icon.png" alt="Sheffield Hallam University logo" />
-            </div>
+          <div class="hero-logos" aria-label="Project affiliation">
+            <img src="assets/dosita-favicon.png" alt="DOSITA logo" class="hero-logo hero-logo-dosita" />
+            <div class="hero-logo-divider" aria-hidden="true"></div>
+            <img src="assets/shu-icon.png" alt="Sheffield Hallam University logo" class="hero-logo hero-logo-shu" />
           </div>
         </div>
 
         <div class="hero-visual">
-          <figure class="media-card">
-            <!-- Your added image -->
+          <figure class="hero-figure">
             <img
               src="assets/scene2.png"
-              alt="MARUS simulation scene used in DOSITA development."
+              alt="Simulation scene from MARUS showing an autonomous marine vessel environment."
               loading="eager"
             />
             <figcaption>
-              MARUS-based simulation environment supporting repeatable virtual sea trials and data acquisition.
+              MARUS simulation environment preview used to support manoeuvring scenario design, virtual sea trials, and data-driven model development.
             </figcaption>
           </figure>
+
+          <div class="hero-sidecard">
+            <h3>Research Focus</h3>
+            <ul class="focus-list">
+              <li>Real-time online system identification</li>
+              <li>Coupled hydrodynamic derivative estimation</li>
+              <li>High-fidelity MARUS integration</li>
+              <li>AI-enabled optimisation and benchmarking</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Overview -->
     <section id="overview" class="section">
-      <div class="container narrow">
-        <h2>Project Overview</h2>
+      <div class="container section-grid section-grid-overview">
+        <div>
+          <p class="eyebrow">Overview</p>
+          <h2>Project Overview</h2>
 
-        <p>
-          DOSITA is a PhD research project focused on the design and development of an open-source, AI-enabled
-          online system identification framework for autonomous marine vessels, particularly Unmanned Surface Vessels (USVs).
-          The project centres on real-time estimation of coupled hydrodynamic derivatives using data-driven methodologies,
-          embedded within the high-fidelity simulation environment of MARUS (Marine Robotics Unity Simulator).
-        </p>
+          <p>
+            DOSITA is a PhD research project focused on the design and development of an open-source, AI-enabled
+            online system identification framework for autonomous marine vessels, particularly Unmanned Surface Vessels (USVs).
+            The project centres on the real-time estimation of coupled hydrodynamic derivatives using data-driven methodologies,
+            embedded within the high-fidelity simulation environment of MARUS (Marine Robotics Unity Simulator).
+          </p>
 
-        <p>
-          The goal is to deliver a reproducible pipeline that connects virtual sea trials to trustworthy model updates,
-          enabling robust control and validation workflows that support sustainable maritime operation and emissions reduction.
-        </p>
-
-        <div class="info-strip">
-          <div class="info-item">
-            <span class="info-k">Focus</span>
-            <span class="info-v">Online identification • Physical consistency • Benchmarking</span>
-          </div>
-          <div class="info-item">
-            <span class="info-k">Platform</span>
-            <span class="info-v">MARUS digital twin &amp; simulation workflows</span>
-          </div>
-          <div class="info-item">
-            <span class="info-k">Outputs</span>
-            <span class="info-v">Open artefacts: code, datasets, manoeuvre metrics, PDFs</span>
-          </div>
+          <p>
+            This research aims to contribute to the cost-effective decarbonisation and sustainable operation of autonomous marine vessels,
+            aligned with the UK Net Zero target
+            (<a class="link" href="https://www.gov.uk/government/publications/net-zero-strategy" target="_blank" rel="noopener">Net Zero Strategy</a>).
+          </p>
         </div>
+
+        <aside class="info-panel">
+          <h3>Project Snapshot</h3>
+          <div class="snapshot-list">
+            <div class="snapshot-item">
+              <span class="snapshot-label">Domain</span>
+              <span class="snapshot-value">Marine Robotics</span>
+            </div>
+            <div class="snapshot-item">
+              <span class="snapshot-label">Core Theme</span>
+              <span class="snapshot-value">Online System Identification</span>
+            </div>
+            <div class="snapshot-item">
+              <span class="snapshot-label">Simulation</span>
+              <span class="snapshot-value">MARUS</span>
+            </div>
+            <div class="snapshot-item">
+              <span class="snapshot-label">Methods</span>
+              <span class="snapshot-value">AI / PINNs / Optimisation</span>
+            </div>
+          </div>
+        </aside>
       </div>
     </section>
 
-    <!-- Why it matters -->
     <section id="why" class="section alt">
       <div class="container narrow">
+        <p class="eyebrow">Motivation</p>
         <h2>Why DOSITA Matters</h2>
 
         <p>
-          Operational optimisation is an immediate pathway to reduce emissions in maritime systems.
-          However, optimisation and control rely on manoeuvring models that are accurate, robust to noise,
-          and consistent with physics. DOSITA aims to close this gap through an end-to-end online identification
-          workflow with validation and benchmarking baked in.
+          Maritime operations contribute approximately 3% of global greenhouse gas (GHG) emissions, placing growing pressure on
+          maritime stakeholders to reduce their carbon footprint.
+          Although sustainable fuels are under development, operational optimisation—particularly through state-of-the-art AI-enabled
+          technologies—remains an immediate and effective pathway to reduce emissions
+          <a class="link" href="https://doi.org/10.1016/j.marpolbul.2017.11.064" target="_blank" rel="noopener">[1]</a>
+          <a class="link" href="https://doi.org/10.1016/j.futures.2023.103197" target="_blank" rel="noopener">[2]</a>.
         </p>
 
         <figure class="figure">
@@ -177,8 +188,8 @@
             loading="lazy"
           />
           <figcaption>
-            Motivation: addressing limitations of existing system identification workflows through online estimation,
-            coupled derivatives, ML-assisted optimisation, and MARUS integration.
+            Motivation: addressing limitations of existing system identification tools through online estimation, coupled derivatives,
+            AI-driven optimisation, and seamless MARUS integration.
           </figcaption>
         </figure>
 
@@ -208,14 +219,14 @@
       </div>
     </section>
 
-    <!-- Research questions -->
     <section id="questions" class="section">
       <div class="container">
+        <p class="eyebrow">Research Direction</p>
         <h2>Research Questions</h2>
 
         <div class="grid">
           <article class="card">
-            <h3>RQ1</h3>
+            <span class="rq-tag">RQ1</span>
             <p>
               How can a data-driven online identification framework enable real-time estimation of coupled hydrodynamic derivatives
               in nonlinear ship manoeuvring models?
@@ -223,23 +234,23 @@
           </article>
 
           <article class="card">
-            <h3>RQ2</h3>
+            <span class="rq-tag">RQ2</span>
             <p>
-              How can AI-enabled machine learning optimisation enhance accuracy, noise robustness, and physical consistency
-              in online nonlinear ship manoeuvring model identification?
+              How can AI-enabled machine learning optimisation enhance the overall accuracy, noise robustness, and physical consistency
+              of online nonlinear ship manoeuvring model identification?
             </p>
           </article>
 
           <article class="card">
-            <h3>RQ3</h3>
+            <span class="rq-tag">RQ3</span>
             <p>
-              How can integration with a high-fidelity simulation and digital twin framework such as MARUS accelerate development,
+              How can integration with a high-fidelity simulation and digital twin framework such as MARUS accelerate the development,
               validation, and deployment of intelligent and sustainable maritime systems?
             </p>
           </article>
 
           <article class="card">
-            <h3>RQ4</h3>
+            <span class="rq-tag">RQ4</span>
             <p>
               What is the balance between real-time simulation execution and the accuracy and reliability of hydrodynamic derivative estimation
               during validation and benchmarking?
@@ -249,114 +260,147 @@
       </div>
     </section>
 
-    <!-- Pipeline -->
     <section id="pipeline" class="section alt">
       <div class="container">
+        <p class="eyebrow">Methodology</p>
         <h2>Pipeline</h2>
 
         <p class="intro">
-          DOSITA connects MARUS-based virtual sea trials with structured data acquisition, online identification,
-          ML-assisted optimisation, and benchmarking to produce reproducible manoeuvring model updates and validation metrics.
+          DOSITA connects MARUS-based virtual sea trials with structured data acquisition, online identification, AI optimisation, and benchmarking
+          to produce reproducible manoeuvring model updates and validation metrics.
         </p>
 
         <figure class="figure wide">
           <img
             src="assets/pipeline.png"
-            alt="DOSITA pipeline: MARUS virtual sea trials, manoeuvre execution, data acquisition and processing, online identification, optimisation, and benchmarking outputs."
+            alt="DOSITA pipeline: MARUS virtual sea trials, system-identification manoeuvres, 3-DOF data acquisition and processing, online system identification, optimisation, and benchmarking outputs."
             loading="lazy"
           />
           <figcaption>
-            End-to-end DOSITA workflow from manoeuvre generation to identification, optimisation, and validation.
+            Planned end-to-end DOSITA workflow from manoeuvre generation through identification, optimisation, and validation.
           </figcaption>
         </figure>
       </div>
     </section>
 
-    <!-- Publications list (NEW) -->
-    <section id="publications" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Publications</h2>
-          <p class="muted">
-            This list is maintained as the project progresses. Preprints and accepted papers will be linked here.
-          </p>
-        </div>
+    <section id="poc" class="section">
+      <div class="container narrow">
+        <p class="eyebrow">Foundations</p>
+        <h2>Proof of Concept (MSc Precursor)</h2>
 
-        <div class="pubs">
-          <!-- You can replace placeholders with real items as you publish -->
-          <article class="pub">
-            <div class="pub-meta">
-              <span class="pub-tag">In preparation</span>
-              <span class="pub-year">2026</span>
-            </div>
-            <h3 class="pub-title">DOSITA: Online Identification and Physically Consistent Manoeuvring Model Updates for Autonomous Marine Vessels</h3>
-            <p class="pub-authors">P. Rezayan, Y. Singh, K. Domdouzis, M. Martelli, F. Kara</p>
-            <div class="pub-links">
-              <span class="pub-note">Link will be added when available.</span>
-            </div>
-          </article>
+        <p>
+          The DOSITA research direction builds on an MSc precursor project that investigated a hybrid MARUS–PINN approach with
+          LLM-guided symbolic discovery for interpretable estimation of manoeuvring hydrodynamic derivatives.
+        </p>
 
-          <article class="pub">
-            <div class="pub-meta">
-              <span class="pub-tag">Abstract</span>
-              <span class="pub-year">2026</span>
-            </div>
-            <h3 class="pub-title">Online System Identification for Nonlinear Ship Manoeuvring Models in MARUS</h3>
-            <p class="pub-authors">P. Rezayan</p>
-            <div class="pub-links">
-              <a class="btn small" href="#outputs">View PDF</a>
-            </div>
-          </article>
-
-          <article class="pub">
-            <div class="pub-meta">
-              <span class="pub-tag">MSc precursor</span>
-              <span class="pub-year">2025</span>
-            </div>
-            <h3 class="pub-title">Hybrid MARUS–PINN Modelling with Symbolic Interpretation for Manoeuvring Derivative Estimation</h3>
-            <p class="pub-authors">P. Rezayan</p>
-            <div class="pub-links">
-              <a class="btn small" href="files/Rezayan_MSc_Dissertation_2025.pdf" target="_blank" rel="noopener">Open PDF</a>
-            </div>
-          </article>
-        </div>
-
-        <div class="pub-note-box">
-          <strong>Tip:</strong> If you want this to auto-generate from a BibTeX file later, we can add a lightweight JS-free build step on GitHub Pages.
+        <div class="callout">
+          <div>
+            <h3>Proof-of-Concept Report</h3>
+            <p>
+              Download the precursor report PDF describing the MARUS manoeuvre suite, preprocessing pipeline, grey-box PINN formulation,
+              and symbolic interpretation layer.
+            </p>
+          </div>
+          <a class="btn primary" href="files/proof_of_concept_report.pdf" target="_blank" rel="noopener">Open PDF</a>
         </div>
       </div>
     </section>
 
-    <!-- Outputs / PDFs -->
     <section id="outputs" class="section alt">
       <div class="container">
-        <h2>PDFs</h2>
+        <p class="eyebrow">Public Outputs</p>
+        <h2>Outputs / PDFs</h2>
 
         <div class="grid3">
-          <article class="card">
-            <h3>MSc Dissertation</h3>
-            <p>Foundational precursor work informing the DOSITA research programme.</p>
+          <article class="card output-card">
+            <div>
+              <h3>MSc Dissertation</h3>
+              <p>Foundational precursor work informing the DOSITA research programme.</p>
+            </div>
             <a class="btn" href="files/Rezayan_MSc_Dissertation_2025.pdf" target="_blank" rel="noopener">Open PDF</a>
           </article>
 
-          <article class="card">
-            <h3>AUV 2026 Abstract</h3>
-            <p>Abstract submission related to the project’s emerging research direction.</p>
+          <article class="card output-card">
+            <div>
+              <h3>AUV 2026 Abstract</h3>
+              <p>Abstract submission related to the project’s emerging research direction.</p>
+            </div>
             <a class="btn" href="files/AUV_2026_Abstract_Submission.pdf" target="_blank" rel="noopener">Open PDF</a>
           </article>
 
-          <article class="card">
-            <h3>ISCSS 2026 Abstract</h3>
-            <p>Abstract submission linked to the early framing of the DOSITA project.</p>
+          <article class="card output-card">
+            <div>
+              <h3>ISCSS 2026 Abstract</h3>
+              <p>Abstract submission linked to the early framing of the DOSITA project.</p>
+            </div>
             <a class="btn" href="files/ISCSS_2026_Abstract_Submission.pdf" target="_blank" rel="noopener">Open PDF</a>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Team -->
-    <section id="team" class="section">
+    <section id="publications" class="section">
+      <div class="container section-grid section-grid-publications">
+        <div>
+          <p class="eyebrow">Research Outputs</p>
+          <h2>Publications List</h2>
+          <p>
+            The following outputs are currently associated with the DOSITA research direction. Journal and conference papers will be added here as the project progresses.
+          </p>
+        </div>
+
+        <div class="pub-panel">
+          <ol class="pub-list">
+            <li class="pub-item">
+              <div class="pub-main">
+                <span class="pub-title">Rezayan, P. (2025). MSc Dissertation.</span>
+                <span class="pub-desc">Foundational precursor work informing DOSITA.</span>
+              </div>
+              <div class="pub-meta">
+                <span class="pub-badge">PDF Available</span>
+                <a class="pub-link" href="files/Rezayan_MSc_Dissertation_2025.pdf" target="_blank" rel="noopener">Open</a>
+              </div>
+            </li>
+
+            <li class="pub-item">
+              <div class="pub-main">
+                <span class="pub-title">AUV 2026 Abstract Submission.</span>
+                <span class="pub-desc">Early dissemination linked to the emerging project direction.</span>
+              </div>
+              <div class="pub-meta">
+                <span class="pub-badge pub-badge-soft">Abstract</span>
+                <a class="pub-link" href="files/AUV_2026_Abstract_Submission.pdf" target="_blank" rel="noopener">Open</a>
+              </div>
+            </li>
+
+            <li class="pub-item">
+              <div class="pub-main">
+                <span class="pub-title">ISCSS 2026 Abstract Submission.</span>
+                <span class="pub-desc">Conference abstract linked to early framing of the DOSITA project.</span>
+              </div>
+              <div class="pub-meta">
+                <span class="pub-badge pub-badge-soft">Abstract</span>
+                <a class="pub-link" href="files/ISCSS_2026_Abstract_Submission.pdf" target="_blank" rel="noopener">Open</a>
+              </div>
+            </li>
+
+            <li class="pub-item pub-item-placeholder">
+              <div class="pub-main">
+                <span class="pub-title">Future journal and conference publications.</span>
+                <span class="pub-desc">To be added as peer-reviewed outputs emerge from the PhD project.</span>
+              </div>
+              <div class="pub-meta">
+                <span class="pub-badge pub-badge-outline">In Preparation</span>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="section alt">
       <div class="container">
+        <p class="eyebrow">People</p>
         <h2>Research Team</h2>
 
         <div class="team-grid">
@@ -423,16 +467,16 @@
       </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section alt">
+    <section id="contact" class="section contact-section">
       <div class="container narrow">
-        <h2>Contact</h2>
+        <p class="eyebrow">Contact</p>
+        <h2>Get in Touch</h2>
 
         <div class="contact-card">
           <div class="contact-left">
             <div class="contact-logos">
-              <img class="logo dosita-logo" src="assets/dosita-favicon.png" alt="DOSITA logo" />
-              <img class="logo shu-logo" src="assets/shu-icon.png" alt="Sheffield Hallam University logo" />
+              <img class="contact-logo dosita-contact-logo" src="assets/dosita-favicon.png" alt="DOSITA logo" />
+              <img class="contact-logo shu-contact-logo" src="assets/shu-icon.png" alt="Sheffield Hallam University logo" />
             </div>
 
             <p><strong>Paria Rezayan</strong></p>
@@ -460,68 +504,43 @@
     </section>
   </main>
 
-  <!-- SIT-inspired footer -->
-  <footer class="sit-footer" role="contentinfo">
+  <footer class="footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <div class="footer-mark">
-          <img src="assets/dosita-favicon.png" alt="DOSITA logo" class="footer-logo" />
-          <span class="footer-title">DOSITA</span>
-        </div>
-        <p class="footer-desc">
-          Data-driven online system identification for autonomous marine vessels — integrating high-fidelity simulation,
-          robust estimation, and benchmarking for reproducible research.
+        <img src="assets/dosita-favicon.png" alt="DOSITA logo" class="footer-brand-logo" />
+        <h3>DOSITA</h3>
+        <p>
+          A PhD research project focused on AI-enabled online system identification, high-fidelity simulation, and sustainable autonomous marine systems.
         </p>
-
-        <div class="footer-social" aria-label="Social links">
-          <a href="https://www.linkedin.com/in/Paria-Rezayan" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
-          <span aria-hidden="true">•</span>
-          <a href="https://github.com/Paria-Rezayan" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
-        </div>
       </div>
 
       <div class="footer-col">
-        <h3>Research Areas</h3>
-        <ul>
-          <li>Online System Identification</li>
-          <li>Physically Informed Learning</li>
-          <li>Manoeuvring Model Benchmarking</li>
-          <li>Simulation &amp; Digital Twins (MARUS)</li>
-        </ul>
+        <h4>Sections</h4>
+        <a href="#overview">Overview</a>
+        <a href="#questions">Research Questions</a>
+        <a href="#pipeline">Pipeline</a>
+        <a href="#outputs">Outputs</a>
       </div>
 
       <div class="footer-col">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#overview">Overview</a></li>
-          <li><a href="#pipeline">Pipeline</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#outputs">PDFs</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <h4>Quick Links</h4>
+        <a href="#publications">Publications</a>
+        <a href="#team">Research Team</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/Paria-Rezayan" target="_blank" rel="noopener">GitHub</a>
       </div>
 
       <div class="footer-col">
-        <h3>Connect</h3>
-        <ul>
-          <li><a href="https://www.shu.ac.uk/" target="_blank" rel="noopener">Sheffield Hallam University</a></li>
-          <li><a href="mailto:P.Rezayan@shu.ac.uk">Email</a></li>
-          <li><a href="https://www.linkedin.com/in/Paria-Rezayan" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a href="https://github.com/Paria-Rezayan" target="_blank" rel="noopener">GitHub</a></li>
-        </ul>
+        <h4>Connect</h4>
+        <a href="https://www.shu.ac.uk/" target="_blank" rel="noopener">Sheffield Hallam University</a>
+        <a href="mailto:P.Rezayan@shu.ac.uk">Email</a>
+        <a href="https://www.linkedin.com/in/Paria-Rezayan" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
 
-    <div class="footer-bottom">
-      <div class="container footer-bottom-inner">
-        <p>© 2026 DOSITA, Sheffield Hallam University</p>
-        <div class="footer-legal">
-          <a href="#" aria-label="Privacy Notice">Privacy Notice</a>
-          <span aria-hidden="true">•</span>
-          <a href="#" aria-label="Cookie Policy">Cookie Policy</a>
-        </div>
-      </div>
+    <div class="container footer-bottom">
+      <p>© 2026 DOSITA | Sheffield Hallam University</p>
+      <p class="footer-meta">Project website</p>
     </div>
   </footer>
 </body>
