@@ -420,3 +420,66 @@ p{
   .callout{ flex-direction: column; align-items: stretch; }
   .contact-card{ grid-template-columns: 1fr; }
 }
+
+/* ================= TEAM SECTION ================= */
+
+.team-grid{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
+}
+
+.team-card{
+  background: #ffffff;
+  border: 1px solid rgba(17,24,39,0.08);
+  border-radius: 16px;
+  padding: 28px 22px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(17,24,39,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.team-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 14px 34px rgba(17,24,39,0.12);
+}
+
+.team-photo{
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 18px;
+  border: 4px solid #f3f4f6;
+}
+
+.team-card h3{
+  margin-bottom: 6px;
+}
+
+.role{
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 4px;
+}
+
+.org{
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-bottom: 14px;
+}
+
+.team-links{
+  font-size: 0.9rem;
+  color: var(--accent);
+}
+
+.team-links a{
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.team-links a:hover{
+  color: var(--accent-2);
+}
