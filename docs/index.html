@@ -7,7 +7,6 @@
   <title>DOSITA | PhD Research Project</title>
   <meta name="description" content="DOSITA: Data-Driven Online System Identification Tool for Autonomous Marine Vessels." />
 
-  <!-- Canonical + SEO / Social -->
   <link rel="canonical" href="https://paria-rezayan.github.io/dosita-site/" />
   <meta name="theme-color" content="#1f4b99" />
 
@@ -22,11 +21,11 @@
   <meta name="twitter:description" content="AI-enabled online system identification + MARUS digital-twin benchmarking for sustainable autonomous marine vessels." />
   <meta name="twitter:image" content="https://paria-rezayan.github.io/dosita-site/assets/scene2.png" />
 
-  <!-- Favicon -->
+ 
   <link rel="icon" type="image/png" href="assets/dosita-favicon.png" />
   <link rel="apple-touch-icon" href="assets/dosita-favicon.png" />
 
-  <!-- Fonts -->
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -44,7 +43,7 @@
         <span class="brand-text">DOSITA</span>
       </a>
 
-      <!-- Mobile menu -->
+     
       <details class="menu" aria-label="Site menu">
         <summary class="menu-btn" aria-label="Open menu">
           <span class="menu-icon" aria-hidden="true"></span>
@@ -66,7 +65,7 @@
         </nav>
       </details>
 
-      <!-- Desktop nav -->
+     
       <nav class="navlinks" aria-label="Primary">
         <a href="#overview">Overview</a>
         <a href="#why">Why</a>
@@ -86,7 +85,7 @@
   </header>
 
   <main id="main">
-    <!-- Hero -->
+   
     <section class="hero" id="top">
       <div class="container hero-grid">
         <div class="hero-copy">
@@ -113,7 +112,7 @@
             <a class="btn" href="#publications">Publications</a>
           </div>
 
-          <!-- Resources strip (SOTA-style) -->
+       
           <div class="resources" aria-label="Project resources">
             <a class="resource-pill" href="https://github.com/Paria-Rezayan" target="_blank" rel="noopener">GitHub</a>
             <a class="resource-pill" href="#pipeline">Docs</a>
@@ -153,7 +152,7 @@
       </div>
     </section>
 
-    <!-- Overview -->
+
     <section id="overview" class="section">
       <div class="container narrow">
         <p class="eyebrow">Overview</p>
@@ -174,7 +173,7 @@
       </div>
     </section>
 
-    <!-- Why -->
+
     <section id="why" class="section alt">
       <div class="container narrow">
         <p class="eyebrow">Motivation</p>
@@ -227,7 +226,7 @@
       </div>
     </section>
 
-    <!-- Research Questions -->
+
     <section id="questions" class="section">
       <div class="container">
         <p class="eyebrow">Research Direction</p>
@@ -269,7 +268,7 @@
       </div>
     </section>
 
-    <!-- Pipeline -->
+ 
     <section id="pipeline" class="section alt">
       <div class="container">
         <p class="eyebrow">Methodology</p>
@@ -293,79 +292,92 @@
       </div>
     </section>
 
-    <!-- Benchmarks & Validation (SOTA section) -->
+
     <section id="benchmarks" class="section">
       <div class="container">
         <p class="eyebrow">Benchmarking</p>
         <h2>Benchmarks &amp; Validation</h2>
-
+    
+        <p class="intro">
+          Benchmarks follow IMO/ITTC manoeuvring trial definitions to support reproducible comparison across
+          vessels, methods, and model updates.
+        </p>
+    
         <div class="grid grid-3">
           <article class="card">
-            <h3>Standards-aligned manoeuvres</h3>
+            <h3>Manoeuvres</h3>
             <p>
-              Turning Circle (±35° rudder-equivalent) and Zig-Zag (10/10 and 20/20) under steady approach conditions
-              (SpeedHold + steady window) to produce system-identification-ready trajectories.
+              Standards-aligned Turning Circle and Zig-Zag tests (10/10, 20/20) executed to port and starboard
+              after a steady approach (near-constant speed, near-zero yaw rate).
             </p>
           </article>
-
+    
           <article class="card">
-            <h3>Core reported metrics</h3>
+            <h3>Reported metrics</h3>
             <p>
-              Turning Circle: Advance (Ad/L), Transfer (Tr/L), Tactical Diameter (Dt/L), steady diameter estimate, t90/t180, and max yaw rate.
-              Zig-Zag: initial turning distance (to 10°)/L, 1st/2nd overshoot (deg), peak times, max yaw rate, and cross-track error (XTE/L).
+              Turning Circle: <strong>Advance</strong> (to 90°), <strong>Transfer</strong> (to 90°), <strong>Tactical Diameter</strong> (to 180°),
+              <strong>time to 90°/180° heading change</strong>, and <strong>peak yaw rate</strong>.
+              Zig-Zag: <strong>first/second overshoot angles</strong>, <strong>overshoot times</strong>, and <strong>peak yaw rate</strong>.
             </p>
           </article>
-
+    
           <article class="card">
-            <h3>Validation checks</h3>
+            <h3>Validation</h3>
             <p>
-              IMO MSC.137-style criteria checks (pass/fail where applicable), trajectory deviation diagnostics, and consistency checks
-              between simulated predictions and manoeuvring data.
+              IMO-style criteria checks (when applicable), trajectory and heading error analysis, and
+              repeatability/symmetry checks across multiple runs.
             </p>
           </article>
         </div>
-
+    
         <div class="bench-table-wrap">
           <div class="bench-table-head">
-            <h3 class="bench-title">Early baseline (illustrative)</h3>
-            <p class="bench-sub">Initial MARUS calibration and automated extraction outputs used as a reproducible benchmark baseline.</p>
+            <h3 class="bench-title">Versioned baseline</h3>
+            <p class="bench-sub">
+              A reference baseline is stored per vessel configuration and operating condition to enable
+              controlled, script-reproducible benchmarks.
+            </p>
           </div>
-
+    
           <div class="bench-grid">
             <div class="bench-card">
               <h4>Turning Circle</h4>
               <ul class="bench-list">
-                <li><strong>Advance (Ad/L):</strong> ~2.30–2.37</li>
-                <li><strong>Transfer (Tr/L):</strong> ~1.27–1.39</li>
-                <li><strong>Tactical Diameter (Dt/L):</strong> ~3.44–3.61</li>
-                <li><strong>Max yaw rate:</strong> ~6.2–6.4 deg/s</li>
+                <li><strong>Advance (normalised by length):</strong> <span class="placeholder">TBD</span></li>
+                <li><strong>Transfer (normalised by length):</strong> <span class="placeholder">TBD</span></li>
+                <li><strong>Tactical Diameter (normalised by length):</strong> <span class="placeholder">TBD</span></li>
+                <li><strong>Time to 90° / 180° heading change:</strong> <span class="placeholder">TBD</span></li>
+                <li><strong>Peak yaw rate:</strong> <span class="placeholder">TBD</span></li>
               </ul>
             </div>
-
+    
             <div class="bench-card">
-              <h4>Zig-Zag (10/10 and 20/20)</h4>
+              <h4>Zig-Zag</h4>
               <ul class="bench-list">
-                <li><strong>Initial turning distance to 10°/L:</strong> ~0.49–0.86</li>
-                <li><strong>1st overshoot:</strong> ~0.26–0.45 deg</li>
-                <li><strong>2nd overshoot:</strong> ~0.29–0.55 deg</li>
-                <li><strong>Max yaw rate:</strong> ~4.0–5.8 deg/s</li>
+                <li><strong>First overshoot angle:</strong> <span class="placeholder">TBD</span></li>
+                <li><strong>Second overshoot angle:</strong> <span class="placeholder">TBD</span></li>
+                <li><strong>Overshoot times:</strong> <span class="placeholder">TBD</span></li>
+                <li><strong>Peak yaw rate:</strong> <span class="placeholder">TBD</span></li>
               </ul>
             </div>
-
+    
             <div class="bench-card">
-              <h4>Reporting + conventions</h4>
+              <h4>Reproducibility</h4>
               <ul class="bench-list">
-                <li><strong>3-DOF logging:</strong> x, y, ψ, u, v, r, δ̂cmd/δ̂exec proxies</li>
-                <li><strong>Coordinate/heading alignment:</strong> simulator ↔ nautical conversion applied for metrics</li>
-                <li><strong>Speed targeting:</strong> Vtarget derived from calibrated V85</li>
+                <li><strong>Logged states:</strong> position (x, y), heading (ψ), surge/sway (u, v), yaw rate (r)</li>
+                <li><strong>Actuation trace:</strong> commanded vs executed rudder-equivalent proxies (+ τz where available)</li>
+                <li><strong>Normalisation &amp; metadata:</strong> distances by ship length (Lpp), plus versioned run settings</li>
               </ul>
             </div>
           </div>
         </div>
+    
+        <p class="refs-inline">
+          Based on IMO MSC.137(76) / MSC.1-Circ.1053 and ITTC manoeuvring trials &amp; validation procedures.
+        </p>
       </div>
     </section>
 
-    <!-- Results / Milestones -->
     <section id="results" class="section alt">
       <div class="container">
         <p class="eyebrow">Progress</p>
@@ -377,32 +389,20 @@
             <ul class="bullet">
               <li>Standards-aligned TC/ZZ automation and dataset logging.</li>
               <li>Automated metric extraction pipeline for benchmark reporting.</li>
-              <li>Baseline manoeuvre benchmarks for port/starboard runs.</li>
+              <li>A PINN model that accurately extracts hydrodynamic derivatives from the logged data.</li>
             </ul>
           </article>
 
           <article class="card">
             <h3>Next milestones</h3>
             <ul class="bullet">
-              <li>Online identification module integration (real-time derivatives).</li>
               <li>Benchmark against literature hulls / published manoeuvre metrics.</li>
-              <li>Validation across manoeuvre families + robustness tests (noise, bias).</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Planned outputs</h3>
-            <ul class="bullet">
-              <li>Parametric state-space manoeuvring models (coupled derivatives).</li>
-              <li>Reproducible validation reports (metrics + criteria checks).</li>
-              <li>Open-source dataset + scripts for benchmarking.</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Proof of concept -->
     <section id="poc" class="section">
       <div class="container narrow">
         <p class="eyebrow">Foundations</p>
@@ -426,7 +426,6 @@
       </div>
     </section>
 
-    <!-- Publications -->
     <section id="publications" class="section">
       <div class="container section-grid section-grid-publications">
         <div>
@@ -476,14 +475,12 @@
       </div>
     </section>
 
-    <!-- Cite -->
     <section id="cite" class="section alt">
       <div class="container narrow">
         <p class="eyebrow">Citation</p>
         <h2>Cite DOSITA</h2>
         <p>
-          If you reference DOSITA (software, datasets, or methodology) in academic work, please cite using the BibTeX below.
-          This entry will be updated as peer-reviewed publications become available.
+          If you reference DOSITA in academic work, please cite using the BibTeX below.
         </p>
 
         <div class="bibtex">
@@ -492,17 +489,18 @@
             <p class="bibtex-sub">Copy and paste into your reference manager.</p>
           </div>
           <pre class="bibtex-code"><code>@misc{dosita2026,
-  title        = {DOSITA: Data-Driven Online System Identification Tool for Autonomous Marine Vessels},
-  author       = {Rezayan, Paria},
-  year         = {2026},
-  howpublished = {\url{https://paria-rezayan.github.io/dosita-site/}},
-  note         = {PhD research project, work in progress}
+    title        = {DOSITA: Data-Driven Online System Identification Tool for Autonomous Marine Vessels},
+    author       = {Singh, Yogang and Domdouzis, Konstantinos and Martelli, Michele and Kara, Fuat and Rezayan, Paria},
+    year         = {2026},
+    howpublished = {\url{https://paria-rezayan.github.io/dosita-site/}},
+    note         = {PhD research project, work in progress},
+    organization = {Sheffield Hallam University and University of Genoa}
 }</code></pre>
         </div>
       </div>
     </section>
 
-    <!-- TEAM -->
+
     <section id="team" class="section">
       <div class="container">
         <p class="eyebrow">People</p>
@@ -589,7 +587,7 @@
       </div>
     </section>
 
-    <!-- Footer (unified contact) -->
+
     <footer id="contact" class="footer footer-with-contact">
       <div class="container footer-contact-wrap">
         <div class="footer-contact">
