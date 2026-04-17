@@ -293,7 +293,26 @@ p{
   background: rgba(31,75,153,0.06);
 }
 
-/* ---------- HERO---------- */
+.hero {
+  color: #ffffff;
+}
+
+.hero .title,
+.hero h1 {
+  color: #ffffff;
+}
+
+.hero .subtitle {
+  color: rgba(255,255,255,0.92);
+}
+
+.hero .tagline {
+  color: rgba(255,255,255,0.85);
+}
+
+.hero .hero-meta {
+  color: rgba(255,255,255,0.75);
+}
 .hero {
   position: relative;
   overflow: hidden;
@@ -1077,4 +1096,25 @@ p{
     transition: none !important;
     animation: none !important;
   }
+}
+.hero,
+.hero h1,
+.hero h2,
+.hero p,
+.hero .subtitle,
+.hero .tagline,
+.hero .hero-meta {
+  color: #ffffff !important;
+}
+
+.hero .subtitle {
+  color: rgba(255,255,255,0.92) !important;
+}
+
+.hero .tagline {
+  color: rgba(255,255,255,0.85) !important;
+}
+
+.hero .hero-meta {
+  color: rgba(255,255,255,0.75) !important;
 }
