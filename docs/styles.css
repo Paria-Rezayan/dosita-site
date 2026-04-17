@@ -366,7 +366,7 @@ p{
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
   gap: 42px;
   align-items: center;
 }
@@ -1117,4 +1117,7 @@ p{
 
 .hero .hero-meta {
   color: rgba(255,255,255,0.75) !important;
+}
+.hero-visual {
+  margin-left: 80px; 
 }
